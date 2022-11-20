@@ -1,6 +1,7 @@
 # Boilerplate: Fullstack
 
 ## Setup
+./weather-api 
 
 ### What's included
 

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import fruits from './fruits'
+import weatherReducer from './weatherReducer'
 
 export default combineReducers({
-  fruits,
+  weather: weatherReducer,
 })

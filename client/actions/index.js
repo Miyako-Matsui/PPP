@@ -1,18 +1,19 @@
-import { getFruits } from '../apis/fruits'
+import { getWeather } from '../apis/weather'
+export const RECEIVE_WEATHER = 'RECEIVE_WEATHER '
 
-export const SET_FRUITS = 'SET_FRUITS'
-
-export function setFruits(fruits) {
+export function receiveWeatherAction(wheatherObj) {
   return {
-    type: SET_FRUITS,
-    payload: fruits,
+    type: RECEIVE_WEATHER, //step 5
+    payload: wheatherObj,
   }
 }
 
-export function fetchFruits() {
+//Thunk
+export function fetchWeather(city) {
   return (dispatch) => {
-    return getFruits().then((fruits) => {
-      dispatch(setFruits(fruits))
+    //step 3
+    return getWeather(city).then((data) => {
+      dispatch(receiveWeatherAction(data)) //step 5
     })
   }
 }

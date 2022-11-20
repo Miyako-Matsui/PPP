@@ -2,6 +2,7 @@
 
 ## Setup
 ./weather-api 
+<img width="622" alt="Screen Shot 2022-11-20 at 9 08 18 PM" src="https://user-images.githubusercontent.com/111627553/202892064-1dc9bec6-9f77-4539-9139-04db20255c71.png">
 
 ### What's included
 
